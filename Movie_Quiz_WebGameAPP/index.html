@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 id="game-title">Movie Quiz</h1>
+    <div id="score">Score:
+        <span id="score-value">0</span>
+    </div>
+    <div id="game-board" style="display: none;">
+        <div class="square" id="square1">1</div>
+        <div class="square" id="square2">2</div>
+        <div class="square" id="square3">3</div>
+        <div class="square" id="square4">4</div>
+        <div class="square" id="square5">5</div>
+        <div class="square" id="square6">6</div>
+        <div class="square" id="square7">7</div>
+        <div class="square" id="square8">8</div>
+        <div class="square" id="square9">9</div>
+    </div>
+    <div id="question-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="question">Question <span id="question-id"></span>: <span id="question-text"></span></p>
+            <form id="answer-form">
+                <label>
+                    <input id="answer1" type="radio" name="answer" value="1">
+                    <span id="answer-1"></span>
+                </label><br>
+                <label>
+                    <input id="answer2" type="radio" name="answer" value="2">
+                    <span id="answer-2"></span>
+                </label><br>
+                <label>
+                    <input id="answer3" type="radio" name="answer" value="3">
+                    <span id="answer-3"></span>
+                </label><br>
+            </form>
+            <button id="submit-answer">Check the answer</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <button id="start-game">Start Game</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
